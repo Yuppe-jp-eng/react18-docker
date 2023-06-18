@@ -1,11 +1,16 @@
 version: "3.8"
 
 services:
-  app:
+  react18-app:
     container_name: react18-app
     build:
       context: .
+    tty: true
     volumes:
-      - ./src:/app/src
+      - .:/home/node/app
+      - react18-app-node-modules:/home/node/app/node_modules
     ports:
       - 5173:5173
+
+volumes:
+  react18-app-node-modules:

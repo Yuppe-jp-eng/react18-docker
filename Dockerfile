@@ -1,10 +1,14 @@
-FROM node:20-alpine
+FROM node:18
 
+RUN mkdir /app && chown node:node /app
 WORKDIR /app
-COPY package.json .
-COPY yarn.lock .
+
+USER node
+COPY --chown=node:node package.json yarn.lock ./
+
 RUN yarn install
-COPY . .
+
+COPY --chown=node:node . .
 
 EXPOSE 5173
 
