@@ -7,10 +7,7 @@ services:
       context: .
     tty: true
     volumes:
-      - .:/home/node/app
-      - react18-app-node-modules:/home/node/app/node_modules
+      - .:/app:cached
+      - /app/node_modules
     ports:
       - 5173:5173
-
-volumes:
-  react18-app-node-modules:

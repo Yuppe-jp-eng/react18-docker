@@ -1,8 +1,7 @@
 {
     "name": "procject-dev",
     "dockerComposeFile": [
-        "../docker-compose.yml",
-        "docker-compose.yml"
+        "../docker-compose.yml"
     ],
     "service": "react18-app",
     "workspaceFolder": "/home/node/app",
