@@ -1,4 +1,3 @@
-
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -15,7 +14,8 @@ function App() {
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
-        <h1>Hello, World!</h1>
+        <h1>Hello, React App!!</h1>
+        <h2><canvas></canvas></h2>
       </div>
     </>
   )
