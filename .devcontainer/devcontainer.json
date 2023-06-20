@@ -4,7 +4,7 @@
         "../docker-compose.yml"
     ],
     "service": "react18-app",
-    "workspaceFolder": "/home/node/app",
+    "workspaceFolder": "/app",
     "customizations": {
         "vscode": {
             "extensions": [
